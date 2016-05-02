@@ -1,0 +1,105 @@
+<div class="common-page-content">
+<div class="container">
+  <div class="col-md-8">
+
+              <div class="form-horizontal">
+                            <datalist id="titlelist">
+                              <option value="Mr">
+                              </option><option value="Mrs">
+                              </option><option value="Ms">
+                              </option><option value="Miss">
+                              </option><option value="Dr">
+                            </option></datalist>
+
+
+                        <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-4 control-label">Full Name&nbsp;*</label>
+                          <div class="col-sm-8">
+                          <select id="nametitle" class="form-control" style="width:17%;float:left; margin-right: 12px;">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Dr">Dr</option>
+                          </select>
+                             <!-- <input type="text" id="nametitle" list="titlelist" class="form-control" placeholder="Title" style="width:17%;float:left; margin-right: 12px;"> -->
+                              <input type="name" class="form-control" id="name" placeholder="Full Name" style="width:80%;float:left">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label">Email Address&nbsp;*</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Email address">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label">Tel/Mob Number&nbsp;*</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="tel_no" onkeypress="return isNumberKey(event);" placeholder="Tel/mob Number">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label">Date &amp; Time&nbsp;*</label>
+                          <div class="col-sm-8">
+                          <input type="text" onchange="GetTime();" readonly="" class="form-control date_calendar pull-left hasDatepicker" id="datepicker" style="width:30%; margin-right:20px;background-color:#ECE9E6; cursor: pointer;" autocomplete="off" tabindex="1" placeholder="Date">
+
+                            <select tabindex="2" id="reservation_time" class="form-control" style="width:30%">
+                                <!--<option value="">Time</option>
+                                  <option value="5:30 PM">5:30 PM</option>
+                                  <option value="6:00 PM">5:45 PM</option>
+                                  <option value="6:30 PM">6:00 PM</option>
+                                  <option value="7:00 PM">6:15 PM</option>
+                                  <option value="7:30 PM">6:30 PM</option>
+                                  <option value="8:00 PM">6:45 PM</option>
+                                  <option value="8:30 PM">7:00 PM</option>
+                                  <option value="9:00 PM">7:15 PM</option>
+                                  <option value="9:30 PM">7:30 PM</option>
+                                  <option value="9:30 PM">7:45 PM</option>
+                                  <option value="9:30 PM">8:00 PM</option>
+                                  <option value="9:30 PM">8:15 PM</option>
+                                  <option value="9:30 PM">8:30 PM</option>
+                                  <option value="9:30 PM">8:45 PM</option>
+                                  <option value="9:30 PM">9:00 PM</option>
+                                  <option value="9:30 PM">9:15 PM</option>
+                                  <option value="9:30 PM">9:30 PM</option>
+                                  <option value="9:30 PM">9:45 PM</option>
+                                  <option value="9:30 PM">10:00 PM</option>
+                                  <option value="9:30 PM">10:15 PM</option>
+                                  <option value="9:30 PM">10:30 PM</option>
+                                  <option value="9:30 PM">10:45 PM</option>
+                                  <option value="9:30 PM">11:00 PM</option>-->
+                              </select>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                         <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label">Number of Guest&nbsp;*</label>
+                          <div class="col-sm-8">
+                            <input type="number" min="0" class="form-control" onkeypress="return isNumberKey(event);" id="no_of_guest" placeholder="Number of Guest">
+                          </div>
+                        </div>
+                         <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label">Special Request</label>
+                          <div class="col-sm-8">
+                            <textarea class="form-control" id="special_request" style="resize: none;" tabindex="4" rows="3" placeholder="Special Request"></textarea>
+                          </div>
+                        </div>
+                         <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label"></label>
+                          <div class="col-sm-8">
+                            <img src="http://www.indianroom.co.uk/captcha/1460993868.9522.jpg" width="290" height="65" style="border:0;" alt=" ">                            </div>
+                        </div>
+                         <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-4 control-label"></label>
+                          <div class="col-sm-8">
+                            <input type="text" autocomplete="off" id="userCaptcha" class="form-control" name="userCaptcha" placeholder="Enter above text" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                      <div class="col-xs-offset-2 col-xs-10 pull-right">
+                                                          <a onclick="reservation();" class="btn  btn-default" style="float:right;">Book a Table</a>
+                                                  </div>
+                  </div>
+                </div></div>
+</div>
+</div>
